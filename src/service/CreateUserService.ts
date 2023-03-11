@@ -20,6 +20,11 @@ class CreateUserService{
         email,
         name,
         password: passwordHash
+      },
+      select: {
+        name: true,
+        email: true,
+        id: true
       }
     })
 
